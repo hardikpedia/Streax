@@ -1,8 +1,30 @@
-TOKEN DESIGN
-1)Initial supply(send to owner) - 70,000,000
-2)max supply (capped)-100,000,000
-3)Make it burnable
-4)Create a Block reward to distribute new supply to miners-
-blockReward
-_beforeTokenTransfer
-_mintMinerReward
+# Streax Token (STX)
+It is an ERC20 token built with the help of OpenZeppelin.
+
+## Installation
+
+Use the package manager yarn to install node_modules.
+
+```bash
+yarn
+```
+
+## Usage
+Firstly, delete .env.example file and add the .env file and add your credentials.
+To deploy it on testnet/hardhat-localhost check the hardhat.configure.js.
+It is suitable for Goerli testnet and localhost.For other testnets you may need to configure it accordingly.
+```bash
+yarn hardhat run scripts/deploy.js --network goerli
+```
+You will get the address of deployed contract in terminal.
+
+For Testing run the following command.
+
+```bash
+yarn hardhat test
+```
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
